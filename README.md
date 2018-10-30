@@ -198,11 +198,11 @@
 	
 9. 마지막 커밋 고치기
 
-	 `git commit -m “<메시지>” - -amend`
+	 `git commit -m “<메시지>” --amend`
 	 
 10.이전 커밋을 수정하고 커밋 메시지를 재사용하기
 
-	` git commit -C HEAD - -amend`
+	`git commit -C HEAD --amend`
 
 ### 브랜치
 
