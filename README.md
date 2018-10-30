@@ -278,153 +278,153 @@
 
 1. 모든 이력 보기
 
- `git log`
+	 `git log`
  
 2. 변경 사항을 보여주는 패치와 함께 로그 표시하기
 
-` git log -p`
+	` git log -p`
 
 3. 1개의 항목만 보이도록 로그 개수 제한하기
 
-`git log -1`
+	`git log -1`
 
 4. 20개의 항목과 패치만 보이도록 로그 제한하기
 
-`git log -20 -p`
+	`git log -20 -p`
 
 5. 6개월 동안의 커밋 로그 보기
 
-`git log --since=”6 hours”`
+	`git log --since=”6 hours”`
 
 6. 이틀 전까지의 커밋 로그 보기
 
-` git log --before=”2 days”`
+	` git log --before=”2 days”`
 
 7. HEAD보다 세 개 이전의 커밋 로그 보기
 
-`git log -1 HEAD-3`
+	`git log -1 HEAD-3`
 
-`git log -1 HEAD^^^`
+	`git log -1 HEAD^^^`
 
-`git log -1 HEAD~1^^`
+	`git log -1 HEAD~1^^`
 
 8. 두 지점 사이의 커밋 로그 보기
 
-`git log <시작 지점>…<끝 지점>`
+	`git log <시작 지점>…<끝 지점>`
 
 - 시작 지점이나 끝 지점은 커밋명, 브랜치명, 혹은 태그명이 될 수 있고 조합하여 사용 가능하다.
 9. 각 항목의 로그 이력 한 줄씩 보기
 
-` git log --pretty=oneline`
+	` git log --pretty=oneline`
 
 10. 각 항목마다 영향 받은 줄의 통계 보기
 
-` git log --stat`
+	` git log --stat`
 
 11. 커밋 할 시점의 파일 상태 보기
 
-`git log --name-status`
+	`git log --name-status`
 
 12. 현재 작업 트리와 인덱스의 차이점 보기
 
-`git diff`
+	`git diff`
 
 13. 인덱스와 저장소의 차이점 보기
 
-` git diff --cached`
+	` git diff --cached`
 
 14. 작업 트리와 저장소의 차이점 보기
 
-`git diff HEAD` 
+	`git diff HEAD` 
 
 15. 작업 트리와 특정 위치 간의 차이점 보기
 
-`git diff <시작 지점>`
+	`git diff <시작 지점>`
 
 	- 시작 지점은 커밋명 or 브랜치명 or 태그명이다.
 16. 저장소의 두 지점 사이의 차이점 보기
 
-`git diff <시작 지점> <끝 지점>`
+	`git diff <시작 지점> <끝 지점>`
 
 17. 차이점의 통계 보기
 
-`git diff --stat <시작 지점> [<끝 지점>]`
+	`git diff --stat <시작 지점> [<끝 지점>]`
 
 18. 파일의 커밋 정보 줄 단위로 보기
 
-`git blame <파일>`
+	`git blame <파일>`
 
 19. 파일의 줄 단위의 복사, 붙여 넣기, 이동 정보 보기
 
-`git blame -M <파일>`
+	`git blame -M <파일>`
 
 20. 파일의 줄 단위의 이동과 원본 파일 정보 보기
 
-`git blame -C -C <파일>`
+	`git blame -C -C <파일>`
 
 21. 로그에서 복사와 붙여 넣은 정보 보기
 
-`git log -C -C -p -1 <특정 지점>`
+	`git log -C -C -p -1 <특정 지점>`
 
 
 ### 원격 저장소
 
 1. 저장소 복제하기
 
-` git clone <저장소>`
+	` git clone <저장소>`
 
 2. 마지막 200개의 커밋 만 포함하여 저장소 복제하기
 
-`git clone --depth 200 <저장소>`
+	`git clone --depth 200 <저장소>`
 
 3. 새로운 원격 저장소 추가하기
 
- `git remote add <원격 저장소> <저장소 url>`
+	 `git remote add <원격 저장소> <저장소 url>`
  
 4. 모든 원격 브랜치 목록 보기
 
-`git branch -r`
+	`git branch -r`
 
 5. 원격 브랜치에서 지역 브랜치 생성하기
 
-`git branch <새로운 브랜치> <원격 브랜치>`
+	`git branch <새로운 브랜치> <원격 브랜치>`
 
 6.  원격 태그에서 지역 브랜치 생성하기
 
-`git branch <새로운 브랜치> <원격 태그>`
+	`git branch <새로운 브랜치> <원격 태그>`
 
 7. origin 저장소에서 합치지 않고 지역 브랜치로 변경 사항 가져오기
 
-` git fetch`
+	` git fetch`
 
 8. 원격 저장소에서 합치지 않고 지역 브랜치로 변경 사항 가져오기
 
-`git fetch <원격 저장소>`
+	`git fetch <원격 저장소>`
 
 9. 원격 저장소에서 변경 사항을 가져와 현재 브랜치에 합치기
 
-`git pull <원격 저장소>`
+	`git pull <원격 저장소>`
 
 10. origin 저장소에서 변경 사항을 가져와 현재 브랜치에 합치기
 
-`git pull`
+	`git pull`
 
 11. 지역 브랜치를 원격 브랜치에 푸싱하기
 
-`git push <원격 저장소> <지역 브랜치>:<원격 브랜치>`
+	`git push <원격 저장소> <지역 브랜치>:<원격 브랜치>`
 
 12. 지역 브랜치를 동일한 이름의 원격 브랜치에 푸싱하기
 
-`git push <원격 저장소> <지역 브랜치>`
+	`git push <원격 저장소> <지역 브랜치>`
 
 13. 새로운 로컬 브랜치를 원격 저장소에 푸싱하기
 
-`git push <원격 저장소> <지역 브랜치>`
+	`git push <원격 저장소> <지역 브랜치>`
 
 14. 원격 저장소에서 쓸모가 없어진 원격 브랜치 제거하기
 
-`git remote prune <원격 저장소>` 
+	`git remote prune <원격 저장소>` 
 
 15. 원격 저장소를 제거하고 관련된 브랜치도 제거하기
 
-`git remote rm <원격 저장소>`
+	`git remote rm <원격 저장소>`
